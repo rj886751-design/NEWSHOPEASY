@@ -1,5 +1,5 @@
 alert("WELOCOME TO MY FIRST PROJECT");
-let NAME=prompt("name");
+let NAME=prompt("NAME");
 console.log(NAME);
 
 
