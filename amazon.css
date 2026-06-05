@@ -23,7 +23,7 @@
 }
 
 .logo {
-    background-image: url("shopeasy_image_jpg.png");
+    background-image: url("shop_image.png");
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -205,7 +205,7 @@ span {
 }
 
 .logo1 {
-    background-image: url("shopeasy_image_jpg.png");
+    background-image: url("shop_image.png");
     background-size: cover;
     height: 50px;
     width: 100px;
