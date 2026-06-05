@@ -1,0 +1,257 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("shopeasy_image_jpg.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+.border:hover {
+    border: 2px solid white;
+}
+
+/* ADDRESS */
+.add-first {
+    color: #ccc;
+    font-size: 0.85rem;
+}
+.add-sec {
+    font-size: 1rem;
+}
+.add-ican {
+    display: flex;
+    align-items: center;
+}
+
+/* SEARCH */
+.nav-search {
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    width: 50px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+
+.search-ican {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: black;
+}
+
+/* TEXT */
+span {
+    font-size: 0.7rem;
+}
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* CART */
+.nav-cart i {
+    font-size: 25px;
+}
+
+/* PANEL */
+.panal {
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.panel-ops p {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* HERO */
+.hero-section {
+    background-image: url("71QcgptqadL._SX3000_\ \(1\).jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-msg {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* SHOP */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #e2e7e6;
+    padding: 10px;
+}
+
+.box {
+    width: 23%;
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.box-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* FOOTER */
+.foot-panel1{
+     background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.foot-panel2 > div {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.footer-column p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 0.85rem;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+/* FOOTER LOGO */
+.foot-panel3 {
+    background: #222f3d;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo1 {
+    background-image: url("shopeasy_image_jpg.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+/* LAST FOOTER */
+.foot-panel4 {
+    background: #0f1111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.7rem;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-search {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .foot-panel2 {
+        grid-template-columns: 1fr 1fr; /* 2 column */
+        text-align: center;
+    }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .foot-panel2 {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
