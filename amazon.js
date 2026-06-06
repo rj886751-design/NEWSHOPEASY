@@ -1,6 +1,6 @@
-let name =prompt(Enter your name:");
+let name =prompt("Enter your name:");
   if(name){
-  alert('Welcome ${name}!\nThanks for visiting ShopEasy.');
+  alert(`Welcome ${name}\nThanks for visiting ShopEasy.`);
 }
 
 
