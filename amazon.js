@@ -1,5 +1,7 @@
-alert("WELOCOME TO MY FIRST PROJECT");
-let NAME=prompt("NAME");
-console.log(NAME);
+let name =prompt(Enter your name:");
+  if(name){
+  alert('Welcome ${name}!\nThanks for visiting ShopEasy.');
+}
+
 
 
